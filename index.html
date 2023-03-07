@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <title>Comment section</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="https://api.iconify.design/iconoir:2x2-cell.svg"
+              alt="logo"
+              width="40"
+            />
+          </a>
+          <h1>Random pic</h1>
+        </div>
+        <nav>
+          <a href="https://twitter.com/">
+            <img
+              src="https://api.iconify.design/iconoir:twitter.svg"
+              alt="twitter"
+            />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img
+              src="https://api.iconify.design/iconoir:facebook.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img
+              src="https://api.iconify.design/iconoir:instagram.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="https://web.telegram.org/k/">
+            <img
+              src="https://api.iconify.design/iconoir:telegram.svg"
+              alt="telegram"
+            />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="post">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime natus
+          voluptatum nisi ullam blanditiis doloremque repellat expedita enim
+          exercitationem? Dolores impedit adipisci et asperiores. Sit pariatur
+          ullam recusandae ad voluptate.
+        </p>
+        <img src="https://picsum.photos/300" alt="random_img" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          officiis provident quas corrupti eius illum minima numquam inventore
+          saepe ipsum necessitatibus id iste accusamus, culpa facere deserunt
+          pariatur nemo cum quasi neque repudiandae! A tempore harum iste,
+          ducimus facilis veniam suscipit dignissimos ratione illum repudiandae
+          eos fugiat consequatur quos culpa!
+        </p>
+      </section>
+      <section class="comment_input">
+        <h2>Добавить комментарий</h2>
+        <div id="add-comment">
+          <form id="comment-form">
+            <label for="author">Автор:</label>
+            <input type="text" id="author" name="author" />
+            <p class="error"></p>
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment"></textarea>
+            <p class="error"></p>
+            <label for="date">Дата:</label>
+            <input type="datetime-local" id="date" name="date" /><br />
+            <button type="button" id="add-button">Добавить комментарий</button>
+          </form>
+        </div>
+      </section>
+      <section class="comments">
+        <h2 id="comments_title"></h2>
+        <div id="comments-list">
+          <ul id="comments"></ul>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+  </body>
+</html>
